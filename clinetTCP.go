@@ -1,5 +1,3 @@
-//Build With: go build -buildmode=c-archive -ldflags "-w -s" clinetTCP.go
-
 package main
 
 import (
