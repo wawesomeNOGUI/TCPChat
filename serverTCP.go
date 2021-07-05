@@ -1,3 +1,4 @@
+//Build With: go build -buildmode=c-archive -ldflags "-w -s" serverTCP.go
 package main
 
 import "C"
@@ -36,6 +37,7 @@ func communications(conn net.Conn) {
 			break
 		} else if err != nil {
 			fmt.Println(err)
+      clients.Delete(conn.RemoteAddr())
 			break
 		}
 
