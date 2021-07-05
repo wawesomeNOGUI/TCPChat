@@ -1,4 +1,3 @@
-//Build With: go build -buildmode=c-archive -ldflags "-w -s" serverTCP.go
 package main
 
 import "C"
